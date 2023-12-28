@@ -1,0 +1,24 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "removeComments": true,
+    "target": "ES2019",
+    "lib": [
+      "ES2019"
+    ],
+    "paths": {
+      "@ops/*": [
+        "../.ops/*",
+      ]
+    },
+    "outDir": "./dist",
+    "rootDir": "./",
+    "baseUrl": "./src",
+    "incremental": true,
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "aws-sdk"
+  ]
+}
